@@ -10,7 +10,7 @@ public class Boletin18_4 {
 Metodos a = new Metodos();
 a.crearArrays();
 a.amosarArrays();
-a.calcularLetra(53196038);
+a.calcularLetra(58432017);
 
     }
     
