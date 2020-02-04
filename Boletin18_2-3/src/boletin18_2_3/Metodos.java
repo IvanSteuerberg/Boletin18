@@ -113,7 +113,7 @@ aux=i;
 break;
 }
 }
-System.out.println(notas[aux]);
+System.out.println("Nota:"+notas[aux]);
 }
 
 public void visualizarAlumnosAprobados(){
@@ -146,16 +146,19 @@ for (int i=0;i<notas.length-1;i++){
     nomes[j]=auxNome;
     }
     }    
+amosarArrays();
 }
 }
 
 public void hacerMenu(){
 Scanner sc = new Scanner(System.in);
-    System.out.println("1-  • Visualizar a nota dun alumno determinado\n" +
+int num;
+do{    
+System.out.println("1-  • Visualizar a nota dun alumno determinado\n" +
                        "2-  • Visualizar unha lista co nome dos alumnos aprobados.\n" +
                        "3-  • Visualizar unha lista ordenada por orden crecente de notas\n"+
                        "4-  • Saír  ");
-int num = sc.nextInt();
+num = sc.nextInt();
 switch (num){
     case 1:
         visualizarNotaAlumno();
@@ -166,10 +169,12 @@ switch (num){
     case 3:
         ordencrecenteArrays();
         break;
-    case 0:
-        
+    case 4:
+        break;
+       
     
-}    
+}
+}while (num!=4);
 }
 
 

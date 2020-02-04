@@ -17,10 +17,13 @@ a.amosarNotaAlta();
 a.crearArrayNomes();
 //a.amosarArrayNomes();
 a.amosarArrays();
+/*
 a.visualizarNotaAlumno();
 a.visualizarAlumnosAprobados();
 a.ordencrecenteArrays();
 a.amosarArrays();
+*/
+a.hacerMenu();
 }
     
 }
