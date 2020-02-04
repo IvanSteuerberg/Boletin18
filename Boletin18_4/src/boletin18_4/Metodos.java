@@ -7,6 +7,7 @@ package boletin18_4;
 public class Metodos {
 int[] numeros = new int[23];
 char[] letras = new char[23];
+
 public void crearArrays(){
 numeros[0]=3;
 letras[0]='A';
