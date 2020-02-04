@@ -82,8 +82,7 @@ else{
 }
 
 public void calcularLetra(int dni){
-int cociente = dni/23;
-int resto = dni-(cociente*23);
+int resto = dni%23;
 buscarElemento(resto);
     
 }
