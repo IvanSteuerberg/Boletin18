@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class Metodos {
 int[] notas = new int[30];
  String[] nomes = new String[30];
+ String[] aprobados = new String[notas.length];
+ 
 public void crearArrayRandom(){
 for (int i = 0; i<notas.length; i++){
     notas[i]=(int)(Math.random()*(10+1));
@@ -22,15 +24,15 @@ System.out.println(notas[i]);
 }
 
 public void contarAprobadosSuspensos(){
-int aprobados = 0,suspensos=0;
+int aprobados2 = 0,suspensos=0;
 for (int i=0;i<notas.length;i++){
 if (notas[i]>=5){
-aprobados++;    
+aprobados2++;    
 }
 else
 suspensos++;    
 }
-System.out.println("Numero de aprobados: "+aprobados+
+System.out.println("Numero de aprobados: "+aprobados2+
         "\nNumero de suspensos: "+suspensos);    
 }
 
@@ -125,7 +127,24 @@ for(int i=0;i<notas.length;i++){
        
 }    
 }
- 
+
+public void listaAprobados(){
+int j=0;
+for(int i=0;i<notas.length;i++){
+if(notas[i]>=5){
+aprobados[j]=nomes[i];
+j++;
+}    
+}       
+}
+
+public void amosarListaAprobados(){
+listaAprobados();    
+for (String aprobado : aprobados) {
+   System.out.println(aprobado);
+   }    
+}
+
 public void amosarArrays(){
 for (int i = 0 ; i<notas.length; i++){
 System.out.println("Nota: "+notas[i]+"  Nome: "+nomes[i]);
@@ -164,7 +183,7 @@ switch (num){
         visualizarNotaAlumno();
         break;
     case 2:    
-        visualizarAlumnosAprobados();
+        amosarListaAprobados();
         break;
     case 3:
         ordencrecenteArrays();

@@ -22,8 +22,10 @@ a.visualizarNotaAlumno();
 a.visualizarAlumnosAprobados();
 a.ordencrecenteArrays();
 a.amosarArrays();
+a.amosarListaAprobados();
 */
 a.hacerMenu();
+
 }
     
 }
