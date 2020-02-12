@@ -165,8 +165,9 @@ for (int i=0;i<notas.length-1;i++){
     nomes[j]=auxNome;
     }
     }    
-amosarArrays();
 }
+amosarArrays();
+
 }
 
 public void hacerMenu(){
